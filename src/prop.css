@@ -1,0 +1,91 @@
+body {
+ margin: 0;
+ padding: 0;
+ overflow: hidden; /* Prevent scrollbars due to full-screen content */
+}
+
+.full-screen-bg {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ z-index: -1; /* Send it to the back */
+}
+
+.full-screen-bg img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover; /* Make the image cover the entire screen */
+}
+
+.full-screen-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+ z-index: 0; /* Place it behind the content */
+}
+
+.valentine-container {
+ text-align: center;
+ margin-top: 50px;
+ z-index: 10;
+}
+
+h1 {
+ font-family: "Comic Sans MS", cursive, sans-serif; /* Just for fun - you can choose a different font */
+ color: #fff; /* Set the font color to white */
+ z-index: 10;
+ margin-bottom: 1rem;
+}
+.yes-button,
+.no-button {
+ font-size: 1.2rem;
+ padding: 10px 20px;
+ margin: 0 10px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ outline: none;
+}
+
+.yes-button {
+ background-color: #4caf50;
+ color: #fff;
+ transition: background-color 0.3s ease-in-out;
+}
+
+.yes-button:hover {
+ background-color: #45a049;
+}
+
+.no-button {
+ background-color: #ff4d4d;
+ color: #fff;
+ transition: transform 0.3s ease-in-out;
+}
+
+.no-button:hover {
+ transform: scale(1.05);
+}
+
+.cute-message {
+ background-color: #ff4d4d;
+ color: #fff;
+ padding: 15px;
+ margin-top: 20px;
+ border-radius: 10px;
+ font-size: 1.2rem;
+}
+
+.confetti {
+ background-color: #4caf50;
+ color: #fff;
+ padding: 20px;
+ margin-top: 20px;
+ border-radius: 10px;
+ font-size: 1.5rem;
+}
