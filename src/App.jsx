@@ -13,6 +13,6 @@ function App() {
       <ValentineProposal />
     </>
   )
-}
+} 
 
 export default App
